@@ -18,6 +18,11 @@ body {
     color: #ffd700; 
   }
 
+#ctask{
+  text-align: end;
+}
+
+
   #heading h2 {
     font-size: 2em;
     font-weight: bold;

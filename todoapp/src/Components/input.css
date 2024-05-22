@@ -32,31 +32,87 @@ form button:hover {
     margin: 0 20%;
 }
 
-#onetsk h2 {
-    background-color: darkmagenta;
-    margin: 10px 0;
-    padding: 5px 10px;
-    width: 400PX; 
-    word-wrap: break-word;
-    color: white;
-}
+
 
 #onetsk {
     display: flex;
+    justify-content: space-between; 
+    background-color: darkmagenta;
     align-items: center; 
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    color: white;
+}
+#onetsk h2 {
+    word-wrap: break-word;
+    width: 400PX; 
+   
+}
+
+@media screen and (max-width: 600px) {
+    
+    #inputContainer {
+        flex-direction: column;
+        word-wrap: break-word;
+    }
+    
+    #taskInput {
+        max-width:300px ;
+    }
+    
+    #onetsk {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #controls {
+        margin-top: 10px;
+    }
+
+    #onetsk h2 {
+        word-wrap: break-word;
+        max-width:200px ;
+       
+    }
 }
 
 #controls {
-    margin: 10px 0 10px 10px;
-    background-color: rgb(100, 28, 95);
-    padding: 5px;
     display: flex;
 }
 
 #controls span {
-    background-color: rgb(245, 203, 35);
+   
     margin-left: 10px;
     color: black;
     padding: 5px 10px;
-    cursor: pointer; /* Adds a pointer cursor to indicate interactivity */
+    cursor: pointer; 
+}
+
+
+
+
+#controls .fa {
+    font-size: 1.2em; 
+    color: #000000;    
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#edit:hover {
+    color: #5fa3eb;  
+    transition: color 0.5s;
+}
+#delete:hover {
+    color: #fc0266; 
+    transition: color 0.5s; 
+}
+#complete:hover {
+    color: #15ff05; 
+    transition: color 0.5s;
+    
+}
+#times {
+    color: #ffff00; 
 }

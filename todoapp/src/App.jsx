@@ -1,15 +1,16 @@
-import { useState } from 'react'
-
 import './App.css'
 import Head from './Components/Header';
 import Addform from './Components/Input';
+import Foot from './Components/Footer';
+
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
      <Head/>
      <Addform/>
+     <Foot></Foot>
     </div>
   )
 }
