@@ -7,6 +7,11 @@ form {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+.completed {
+ 
+    background-color:forestgreen !important;
+    color: rgb(7, 9, 43) !important;
+}
 
 form input {
     width: 75%;
@@ -32,49 +37,45 @@ form button:hover {
     margin: 0 20%;
 }
 
-
-
 #onetsk {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: darkmagenta;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     margin: 10px 0;
     padding: 5px 10px;
     word-wrap: break-word;
     color: white;
 }
+
 #onetsk h2 {
     word-wrap: break-word;
-    width: 400PX; 
-   
+    width: 400px;
 }
 
 @media screen and (max-width: 600px) {
-    
     #inputContainer {
         flex-direction: column;
         word-wrap: break-word;
     }
-    
+
     #taskInput {
-        max-width:300px ;
+        max-width: 300px;
     }
-    
+
     #onetsk {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     #controls {
         margin-top: 10px;
     }
 
     #onetsk h2 {
         word-wrap: break-word;
-        max-width:200px ;
-       
+        max-width: 200px;
     }
 }
 
@@ -83,36 +84,36 @@ form button:hover {
 }
 
 #controls span {
-   
     margin-left: 10px;
     color: black;
     padding: 5px 10px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-
-
-
 #controls .fa {
-    font-size: 1.2em; 
-    color: #000000;    
+    font-size: 1.2em;
+    color: #000000;
     margin: 0 5px;
     cursor: pointer;
 }
 
 #edit:hover {
-    color: #5fa3eb;  
+    color: #5fa3eb;
     transition: color 0.5s;
 }
+
 #delete:hover {
-    color: #fc0266; 
-    transition: color 0.5s; 
-}
-#complete:hover {
-    color: #15ff05; 
+    color: #fc0266;
     transition: color 0.5s;
-    
 }
+
+#complete:hover {
+    color: #15ff05;
+    transition: color 0.5s;
+}
+
 #times {
-    color: #ffff00; 
+    color: #e9fe00;
 }
+
+
